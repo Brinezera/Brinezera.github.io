@@ -1,0 +1,47 @@
+body {
+  background-image: url(sudo.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.minha__foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.carousel {
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel img {
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}

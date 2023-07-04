@@ -1,0 +1,17 @@
+@media ( max-width : 600px ) {
+
+  form {
+    font-size: 14px;
+  }
+
+  input , select , textarea {
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #fullName {
+    display: flex;
+    flex-direction: column;
+  }
+}
