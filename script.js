@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
   const carouselContainer = document.querySelector(".carousel-container");
 
   prevButton.addEventListener("click", function() {
-    carouselContainer.scrollBy({
-      left: -carouselContainer.offsetWidth,
+    carouselContainer.scroll({
+      left: carouselContainer.scrollLeft - carouselContainer.offsetWidth,
       behavior: "smooth"
     });
   });
 
   nextButton.addEventListener("click", function() {
-    carouselContainer.scrollBy({
-      left: carouselContainer.offsetWidth,
+    carouselContainer.scroll({
+      left: carouselContainer.scrollLeft + carouselContainer.offsetWidth,
       behavior: "smooth"
     });
   });

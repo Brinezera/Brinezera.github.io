@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <header>
@@ -22,7 +24,7 @@
   <section id="sobre">
     <h2>Sobre Mim</h2>
     <p>Minha paixão por tecnologia começou quando eu era pequeno, ajudando meu pai em sua Lan-House. Desde então, tenho me divertido montando e desmontando PCs e explorando o mundo dos jogos. Antes de me dedicar completamente a essa área, trabalhei como montador de móveis, administrador na área de equipamentos de um hospital e vendedor. Atualmente, sou um estudante da Trybe e tenho focado meus estudos em programação, especialmente em Ethical Hacking.</p>
-    <img class="minha__foto" src="minha_foto.jpeg" alt="foto-andré">
+    <img class="minha-foto" src="minha_foto.jpeg" alt="foto-andré">
   </section>
 
   <section id="skills">
@@ -34,18 +36,25 @@
       <li>Bootstrap</li>
       <li>Metodologias Ágeis</li>
     </ul>
+    <ul class="aside">
+      <li>Linux</li>
+      <li>Git/GitHub</li>
+      <li>Word/Excell</li>
+      <li>Lógica de Programação Essencial</li>
+      <li>Cibersegurança</li>
+    </ul>
   </section>
 
   <section id="portfolio">
     <h2>Portfolio</h2>
     <div class="carousel">
       <div class="carousel-container">
-        <img src="project1.png" alt="Projeto 1">
-        <img src="project2.png" alt="Projeto 2">
-        <img src="project3.png" alt="Projeto 3">
+        <img src="project1.png" alt="Projeto 1" class="project">
+        <img src="project2.png" alt="Projeto 2" class="project">
+        <img src="project3.png" alt="Projeto 3" class="project">
       </div>
-        <a class="carousel-prev">&#10094;</a>
-        <a class="carousel-next">&#10095;</a>
+      <a class="carousel-prev"><i class="fas fa-chevron-left"></i></a>
+      <a class="carousel-next"><i class="fas fa-chevron-right"></i></a>
     </div>
   </section>
 
@@ -55,13 +64,14 @@
     <ul>
       <li>E-mail: contatoandrecascio@gmail.com</li>
       <li>Telefone: (11) 98368-9512</li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/andr%C3%A9-baumgartner/" target="_blank" rel="noopener">Meu Perfil</a></li>
     </ul>
   </section>
 
   <footer>
-    <p>Gostaria de ver descontos nos joguinhos? <a href="https://gg.deals/" target="_blank">Clique aqui</a> para visitar o GG Deals!</p>
+    <p>Tá com um tempinho sobrando? Joga ai <a href="" target="_blank" rel="noopener">Clique aqui</a></p>
   </footer>
 
+<script src="script.js"></script>
 </body>
-  <script src="script.js"></script>
 </html>
