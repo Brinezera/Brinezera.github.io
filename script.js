@@ -4,16 +4,33 @@ document.addEventListener("DOMContentLoaded", function() {
   const carouselContainer = document.querySelector(".carousel-container");
 
   prevButton.addEventListener("click", function() {
-    carouselContainer.scroll({
-      left: carouselContainer.scrollLeft - carouselContainer.offsetWidth,
+    carouselContainer.scrollBy({
+      left: -carouselContainer.offsetWidth,
       behavior: "smooth"
     });
   });
 
   nextButton.addEventListener("click", function() {
-    carouselContainer.scroll({
-      left: carouselContainer.scrollLeft + carouselContainer.offsetWidth,
+    carouselContainer.scrollBy({
+      left: carouselContainer.offsetWidth,
       behavior: "smooth"
     });
+  });
+
+  carouselContainer.addEventListener("scroll", function() {
+    const currentScroll = carouselContainer.scrollLeft;
+    const maxScroll = carouselContainer.scrollWidth - carouselContainer.offsetWidth;
+    
+    if (currentScroll === 0) {
+      prevButton.style.display = "none";
+    } else {
+      prevButton.style.display = "block";
+    }
+    
+    if (currentScroll === maxScroll) {
+      nextButton.style.display = "none";
+    } else {
+      nextButton.style.display = "block";
+    }
   });
 });
