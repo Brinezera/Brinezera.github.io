@@ -42,7 +42,6 @@ nav ul li a:hover {
   color: #ccc;
 }
 
-/* Estilos das seções */
 section {
   padding: 40px;
   color: #333;
@@ -77,7 +76,6 @@ section ul li {
   margin-bottom: 10px;
 }
 
-/* Estilos do carousel */
 .carousel {
   position: relative;
   margin: 40px 0;
@@ -89,13 +87,14 @@ section ul li {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  margin-bottom: 20px;
 }
 
 .carousel img {
   width: 100%;
   scroll-snap-align: start;
   border-radius: 4px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .carousel-prev,
