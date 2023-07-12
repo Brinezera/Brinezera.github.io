@@ -7,10 +7,11 @@ header {
   background-color: #333;
   color: #fff;
   padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 36px;
   margin: 0;
 }
 
@@ -19,6 +20,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
 }
 
 nav ul li {
@@ -35,31 +37,42 @@ nav ul li a:hover {
   color: #ccc;
 }
 
+/* Estilos das seções */
 section {
   padding: 40px;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section h2 {
-  font-size: 24px;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-#contato {
-  display: inline-block;
+section p {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-#skills {
+section ul {
   display: flex;
-  justify-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.minha-foto {
-  border-radius: 100%;
-  width: 300px;
-  height: 300px;
-  margin-left: 350px;
+section ul li {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
+/* Estilos do carousel */
 .carousel {
   position: relative;
   margin: 40px 0;
@@ -108,8 +121,6 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
-  display: flex;
-  align-items: center;
 }
 
 footer a {
