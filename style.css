@@ -1,10 +1,8 @@
-/* Estilos gerais */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f2f2f2;
 }
 
-/* Estilos do header */
 header {
   background-color: #333;
   color: #fff;
@@ -37,7 +35,6 @@ nav ul li a:hover {
   color: #ccc;
 }
 
-/* Estilos das seções */
 section {
   padding: 40px;
   color: #333;
@@ -59,4 +56,67 @@ section h2 {
 .minha-foto {
   border-radius: 100%;
   width: 300px;
-  height:
+  height: 300px;
+  margin-left: 350px;
+}
+
+.carousel {
+  position: relative;
+  margin: 40px 0;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel img {
+  width: 100%;
+  scroll-snap-align: start;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ccc;
+}
