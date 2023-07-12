@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init();
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   const prevButton = document.querySelector(".carousel-prev");
   const nextButton = document.querySelector(".carousel-next");
